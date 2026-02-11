@@ -1,0 +1,127 @@
+"use client";
+
+export default function Home() {
+  return (
+    <main className="bg-white text-gray-900">
+
+      {/* HERO SECTION */}
+      <section className="bg-black text-white py-24 px-6 text-center">
+        <h1 className="text-5xl font-bold mb-6">
+          Built Here.
+        </h1>
+        <p className="text-xl max-w-3xl mx-auto mb-8">
+          Because where electronics are made still matters.
+          Transparent origin. Verified manufacturing. Real accountability.
+        </p>
+        <div className="space-x-4">
+          <button className="bg-white text-black px-6 py-3 font-semibold">
+            Shop Built Here
+          </button>
+          <button className="border border-white px-6 py-3 font-semibold">
+            How It Works
+          </button>
+        </div>
+      </section>
+
+      {/* PROBLEM SECTION */}
+      <section className="py-20 px-6 max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6">
+          The Electronics Supply Chain Is Opaque.
+        </h2>
+        <p className="text-lg leading-relaxed">
+          Much of the world’s electronics move through supply chains shaped by
+          state subsidies, weak labor enforcement, and limited transparency.
+          Consumers rarely know what their dollars are funding.
+          Built Here exists to change that.
+        </p>
+      </section>
+
+      {/* BADGE SECTION */}
+      <section className="bg-gray-100 py-20 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+
+          <div className="bg-white p-8 shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-green-700">
+              BUILT HERE
+            </h3>
+            <p>
+              Meets the 70% domestic manufacturing standard.
+              No reliance on foreign entity of concern manufactured
+              critical components. Verified origin transparency.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-red-700">
+              NOT BUILT HERE
+            </h3>
+            <p>
+              Insufficient domestic manufacturing value or supply chain
+              exposure to high-risk production ecosystems.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 70% STANDARD */}
+      <section className="py-20 px-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 text-center">
+          The 70% Domestic Manufacturing Standard
+        </h2>
+        <p className="leading-relaxed text-lg text-center">
+          A product qualifies as Built Here if at least 70 percent of its total
+          manufacturing value—measured by component cost, manufacturing labor,
+          and qualifying U.S. assembly—is produced in the United States,
+          excluding design, software, and marketing, and without reliance on
+          foreign entity of concern manufactured critical components.
+        </p>
+      </section>
+
+      {/* PRODUCT GRID */}
+      <section className="bg-gray-50 py-20 px-6">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Shop Verified Products
+        </h2>
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+          {["Wireless Router", "Industrial Laptop", "Smart Home Hub"].map((item, i) => (
+            <div key={i} className="bg-white p-6 shadow-md">
+              <div className="h-48 bg-gray-200 mb-4"></div>
+              <h3 className="text-xl font-semibold mb-2">{item}</h3>
+              <p className="text-sm mb-4">
+                Verified 70%+ U.S. manufacturing value.
+              </p>
+              <button className="bg-black text-white px-4 py-2 w-full">
+                View Product
+              </button>
+            </div>
+          ))}
+
+        </div>
+      </section>
+
+      {/* MISSION SECTION */}
+      <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6">
+          Your Purchase Is a Vote.
+        </h2>
+        <p className="text-lg leading-relaxed">
+          You may not control global trade policy. But you control where your
+          money goes. When enough buyers choose transparent, responsible
+          manufacturing, supply chains adjust.
+        </p>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-black text-white py-12 px-6 text-center">
+        <p className="mb-4">© 2026 Built Here</p>
+        <p className="text-sm text-gray-400">
+          Verified origin. Transparent sourcing. Real manufacturing.
+        </p>
+      </footer>
+
+    </main>
+  );
+}
